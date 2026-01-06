@@ -353,4 +353,70 @@ function subscribeNewsletter() {
 .subscribe-form .mc-form .clear button:hover::before {
   color: #001232;
 }
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+  .pt-135 {
+    padding-top: 80px;
+  }
+  .pt-152 {
+    padding-top: 80px;
+  }
+  .pt-150 {
+    padding-top: 70px;
+  }
+  .pt-205 {
+    padding-top: 100px;
+  }
+  .pb-120 {
+    padding-bottom: 45px;
+  }
+  .pb-130 {
+    padding-bottom: 50px;
+  }
+  .pb-145 {
+    padding-bottom: 60px;
+  }
+  .pb-110 {
+    padding-bottom: 50px;
+  }
+  .pb-190 {
+    padding-bottom: 110px;
+  }
+  .mb-50 {
+    margin-bottom: 35px;
+  }
+  .mb-60 {
+    margin-bottom: 50px;
+  }
+  .mb-80 {
+    margin-bottom: 50px;
+  }
+  .overview-img {
+    margin-top: 40px;
+  }
+  .overview-content h1 {
+    font-size: 33px;
+  }
+  .overview-content h2 {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .newsletter-wrapper {
+    padding: 37px 10px 44px;
+  }
+  .newsletter-img img {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .overview-img {
+    margin-top: 50px;
+  }
+  .newsletter-wrapper {
+    padding: 20px 70px 24px 40px;
+  }
+}
 </style>

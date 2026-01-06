@@ -267,4 +267,38 @@ function closeDropdowns(e) {
   background: #f5f5f5;
   color: #ffb52f;
 }
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+  .slider-dots {
+    right: 15px;
+  }
+
+  .slider-social {
+    left: 15px;
+  }
+
+  .language-currency-wrapper {
+    display: none;
+  }
+
+  .slider-img img {
+    max-width: 260px;
+  }
+
+  .slider-text-img h6 {
+    display: block;
+    margin: 0 11px 30px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .slider-img img {
+    max-width: 500px;
+  }
+
+  .language-currency-wrapper {
+    display: block;
+  }
+}
 </style>

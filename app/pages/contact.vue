@@ -129,4 +129,31 @@ function submitForm() {
 .mb-30 {
   margin-bottom: 30px;
 }
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+  .pt-200 {
+    padding-top: 100px;
+  }
+  .pb-200 {
+    padding-bottom: 100px;
+  }
+  .pt-100 {
+    padding-top: 50px;
+  }
+  .pb-100 {
+    padding-bottom: 50px;
+  }
+  .breadcrumb-content h2 {
+    font-size: 25px;
+    letter-spacing: 0;
+  }
+  .communication-info {
+    margin-right: 0;
+    padding: 54px 15px;
+  }
+  .contact-message-wrapper {
+    margin-top: 50px;
+  }
+}
 </style>

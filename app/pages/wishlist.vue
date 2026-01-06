@@ -135,4 +135,27 @@ function removeItem(id) {
 .product-cart-icon a:hover {
   color: #ffb52f;
 }
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+  .pt-200 {
+    padding-top: 100px;
+  }
+  .pb-200 {
+    padding-bottom: 100px;
+  }
+  .pt-100 {
+    padding-top: 50px;
+  }
+  .pb-100 {
+    padding-bottom: 50px;
+  }
+  .breadcrumb-content h2 {
+    font-size: 25px;
+    letter-spacing: 0;
+  }
+  .table-content table td {
+    padding: 30px 6px 0;
+  }
+}
 </style>
