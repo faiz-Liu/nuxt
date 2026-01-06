@@ -1,0 +1,43 @@
+<template>
+  <div class="product-wrapper">
+    <div class="product-img">
+      <NuxtLink :to="`/product/${product.id}`">
+        <img :src="product.image" :alt="product.name">
+      </NuxtLink>
+      <div class="product-action">
+        <a class="action-plus-2" title="Add To Cart" href="#" @click.prevent="addToCart">
+          <i class="ti-shopping-cart"></i>
+        </a>
+        <a class="action-cart-2" title="Wishlist" href="#" @click.prevent="addToWishlist">
+          <i class="ti-heart"></i>
+        </a>
+        <a class="action-reload" title="Quick View" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">
+          <i class="ti-zoom-in"></i>
+        </a>
+      </div>
+      <div class="product-content-wrapper-2">
+        <div class="product-title-price-2 text-center">
+          <span>Price: ${{ product.price }}</span>
+          <h4><NuxtLink :to="`/product/${product.id}`">{{ product.name }}</NuxtLink></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup>
+const props = defineProps({
+  product: {
+    type: Object,
+    required: true
+  }
+})
+
+function addToCart() {
+  console.log('Added to cart:', props.product.name)
+}
+
+function addToWishlist() {
+  console.log('Added to wishlist:', props.product.name)
+}
+</script>
